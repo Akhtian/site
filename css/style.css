@@ -1,0 +1,45 @@
+.container{
+		width: 1200px; 
+		margin: 0 auto; 
+		font-family: ARIAL;	
+		}
+
+		p{
+		font-size: 25px; 
+		text-align: justify;
+		}
+
+		.container  div{
+			background-color: #FFFF00;
+			border: 2px outset #696969;
+			font-size: 30px; 
+			color: #696969; 
+			text-align: center; 
+			padding: 30px; 
+			box-sizing: content-box;
+		}
+
+		.block2{margin: 10px 0 0 0;}
+		
+		.block3{margin: 10px 0 0 0;}
+
+		.container ul{
+			text-align: left;
+		}
+		h1{font-size: 35px; 
+			text-align: center; 
+			padding: 15px;
+			font-weight: bold; 	
+		}
+		h2{font-size: 35px; 
+			text-align: center; 
+			padding: 15px;
+			font-weight: bold; 
+
+		}
+
+		h3{
+			font-size: 30px; 
+			text-align: left; 
+			padding: 15px; 	
+		}
