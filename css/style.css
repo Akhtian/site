@@ -9,7 +9,7 @@
 		text-align: justify;
 		}
 
-		.container  div{
+		.waterPlants, .moh, .vascularSpore, .seedPlants, .main{
 			background-color: #FFFF00;
 			border: 2px outset #696969;
 			font-size: 30px; 
@@ -18,7 +18,7 @@
 			padding: 30px; 
 			box-sizing: content-box;
 		}
-
+		
 		.block2{margin: 10px 0 0 0;}
 		
 		.block3{margin: 10px 0 0 0;}
@@ -43,3 +43,40 @@
 			text-align: left; 
 			padding: 15px; 	
 		}
+
+		.link_block{
+			position: fixed;
+			min-height: 100px;
+			min-width: 50px;
+			background: green;
+			top: calc(50% - 100px);
+			z-index: 5;
+			left: 0;
+			padding: 10px 10px;
+			font-size: 25px;
+			text-align: center;
+			border: 2px solid black;
+			}
+
+		.img{
+			position: relative;
+		}
+
+		.info{
+			display: none;
+		}
+		.img:hover .info{
+			display: inline-block;
+ 			position: absolute;
+  			height: 35px;
+  			width: calc(100%-500px);
+  			top: 1%;
+  			left: 0;
+  			right: 0;
+  			background-color: rgba(255, 255, 255, 0.5);
+  			text-align: center;
+  			color: black;
+		}
+
+
+		
