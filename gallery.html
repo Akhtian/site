@@ -6,52 +6,43 @@
 		<link rel= stylesheet href="css/style.css">
 	</head>
 <body class = "container">
-	<div class="main">
+	<ul class="menu">
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="#">Галерея</a></li>
+		<li><a href="#">Home work 5</a>
+		<ul class="in_menu">
+			<li><a href="#">Float</a>
+				<ul class="in_in_menu">
+				<li><a href="float.html">Float1</a></li>
+				<li><a href="float_psevdoclr.html">Float2</a></li>	
+				</ul>
+			</li>
+			<li><a href="table-cell.html">T-cell</a></li>
+			<li><a href="in_block.html">In_block</a></li>
+			<li><a href="flexbox.html">Flex</a></li>
+		</ul>	
+		</li>
+	</ul>
+	<div class="block">
 		<h1>Фотографии растений</h1>
 		<h2 id = "waterPlants">Водоросли</h2>
-		<div class="waterPlants">
-			<div class="img">
+		<div class="block">
 			<img src='img\water_plants_image_one.jpg' alt="Water plants">
-			<p class="info">Водоросля</p>
-			</div>
+			<img src='img\water_plants_image_two.jpg' alt="Water plants">
 		</div>
 		<h2 id = "moh">Мохообразные</h2>
-		<div class="moh">
-			<div class="img">
+		<div class="block">
 			<img src='img\moh.jpg' alt="Moh">
-			<p class="info">Мохообразные</p>
-			</div>
+			<img src='img\moh_two.jpg' alt="moh">
 		</div>
 		<h2 id = "vascularSpore">Сосудистые споровые</h2>
-		<div class="vascularSpore">
-			<div class="img">
+		<div class="block">
 			<img src='img\vascular_spore_one.jpg' alt="vascular spore">
-			<p class="info">Поровые</p>
-			</div>
-			
+			<img src='img\vascular_spore_two.jpg' alt="vascular spore">
 		</div>
 		<h2 id = "seedPlants">Семенные растения</h2>
-		<div class="seedPlants">
-			<div class="img">
+		<div class="block">
 			<img src='img\seed_plants_one.jpg' alt="seed plants">
-			<p class="info">Семенные</p>
-			</div>
-			
+			<img src='img\seed_plants_two.jpg' alt="seed plants">
 		</div>
-	</div> 
-		<!--Sticky_block-->
-		<div class = "link_block">
-			<div>
-			<a href="#waterPlants">Водоросли</a>
-			</div>
-			<div>
-			<a href="#vascularSpore">Споровые</a>
-			</div>
-			<div>
-			<a href="#moh">Мох</a>
-			</div>
-			<div>
-			<a href="#seedPlants">Семенные растения</a>
-			</div>
-		</div> 
 </body>
