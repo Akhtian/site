@@ -105,7 +105,7 @@ table {
 		.menu li{
 			display: inline-block;
 			background: orange;
-			padding: 20px 30px;
+			padding:20px 0px;
 			margin-left: 100px;
 			position: relative;
 		}	
@@ -120,6 +120,7 @@ table {
 			font-weight: 800;
 			font-size: 25px;
 			text-transform: uppercase;
+			padding: 50px 50px;
 		}
 
 		
@@ -299,5 +300,26 @@ table {
 		outline: 2px solid black;
 	}
 	
+	/*link menu*/
+	.menu_link{
+			position: fixed;
+			min-height: 100px;
+			min-width: 50px;
+			background: orange;
+			top: calc(50% - 100px);
+			z-index: 5;
+			left: 0;
+			padding: 10px 10px;
+			font-size: 25px;
+			text-align: center;
+			border: 2px solid black;
+			}
+
+	.menu_link a{
+		display: block;
+		margin: 20px 5px;
+		color: grey;
+	}
+
 
 
