@@ -160,7 +160,6 @@ table {
 						
 		}
 		
-		
 
 		.menu li:hover .in_menu{
 			display: inherit;
@@ -241,18 +240,67 @@ table {
 		}
 
 		
-		/*.menu>li:first-child a:before{
-			background-position: -178px -10px;
-		}*/
-		
-		/*.menu>li+li a:before{
-			background-position: -94px -94px;
-		}*/
-		.menu>li+li+li a:after{
-			background-position: -94px -10px;
+/*bottom menu*/
+
+		.bottom_menu{
+			text-align: center;
+			font-size: 0;
+			position: relative;
+			margin-top: 10px;
+			margin-bottom: 10px;
 		}
 
+		.bottom_menu li{
+			display: inline-block;
+			padding:20px 0px;
+			margin-left: 100px;
+			position: relative;
+		}	
 
+		.bottom_menu li:first-child{
+			margin-left: 0;
+		}
+
+		.bottom_menu li a{
+			display: inline-block;
+			text-decoration: none;
+			color: white;
+			font-weight: 800;
+			font-size: 25px;
+			text-transform: uppercase;
+			padding: 5px 70px;
+		}
+
+		.bottom_menu>li:nth-child(1)>a:before{
+			content: "";
+			background: url('../img/sprite.png');
+			background-position: -94px -10px;
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			}
+			.bottom_menu>li:nth-child(2)>a:before{
+			content: "";
+			background: url('../img/sprite.png');
+			background-position: -346px -10px;
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			}
+			.bottom_menu>li:nth-child(3)>a:before{
+			content: "";
+			background: url('../img/sprite.png');
+			background-position: -682px -10px;
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			}
 
 /*table_cell_properties*/
 		.t_cell{
