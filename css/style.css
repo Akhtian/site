@@ -115,12 +115,13 @@ table {
 		}
 
 		.menu li a{
+			display: inline-block;
 			text-decoration: none;
 			color: white;
 			font-weight: 800;
 			font-size: 25px;
 			text-transform: uppercase;
-			padding: 50px 50px;
+			padding: 5px 70px;
 		}
 
 		
@@ -151,16 +152,14 @@ table {
 
 		.in_in_menu{
 			display: none;		
-			left: -86%;
+			left: -90%;
 			top: 0;
 			font-size: 0;			
 			position: absolute;
 			padding-right: 50px;
 						
 		}
-		.in_in_menu li{
-			
-		}
+		
 		
 
 		.menu li:hover .in_menu{
@@ -172,6 +171,89 @@ table {
 			display: inherit;
 	
 		}
+
+		.menu>li:first-child>a:before{
+			content: "";
+			background: url('../img/sprite.png');
+			background-position: -262px -10px;
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			left: 0;
+			top: 5%;
+
+			}
+		.menu>li:nth-child(2)>a:before{
+			content: "";
+			background: url('../img/sprite.png');
+			background-position: -178px -10px;
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			left: 0;
+			top: 5%;
+
+			}
+
+			.menu>li:nth-child(3)>a:after{
+			content: "";
+			background: url('../img/sprite.png');
+			background-position: -10px -10px;
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			right: 0;
+			top: 5%;
+
+			}
+
+			.menu>li:hover:nth-child(3)>a:after{
+				content: "";
+			background: url('../img/sprite.png');
+			background-position: -598px -10px;
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			right: 0;
+			top: 5%;
+			}
+
+			.in_menu>li:nth-child(1)>a:before{
+			content: "";
+			background: url('../img/sprite.png');
+			background-position: -430px -10px;
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			left: 0;
+			top: 5%;
+			}
+
+			.in_menu>li:hover:nth-child(1)>a:before{
+				content: "";
+			background: url('../img/sprite.png');
+			background-position: -514px -10px;
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			left: 0;
+			top: 5%;
+		}
+
+		
+		/*.menu>li:first-child a:before{
+			background-position: -178px -10px;
+		}*/
+		
+		/*.menu>li+li a:before{
+			background-position: -94px -94px;
+		}*/
+		.menu>li+li+li a:after{
+			background-position: -94px -10px;
+		}
+
+
+
 /*table_cell_properties*/
 		.t_cell{
 		outline: 2px solid black;	
