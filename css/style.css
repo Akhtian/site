@@ -99,7 +99,8 @@ table {
 			font-size: 0;
 			position: relative;
 			margin-top: 10px;
-			margin-bottom: 10px;
+			
+
 		}
 
 		.menu li{
@@ -108,6 +109,8 @@ table {
 			padding:20px 0px;
 			margin-left: 100px;
 			position: relative;
+			border-radius: 10px;
+			margin-bottom: 10px;
 		}	
 
 		.menu li:first-child{
@@ -128,20 +131,19 @@ table {
 
 		.in_menu li{
 			display: block;
-			background: orange;
 			margin-left: 0;
-			width: 100%;
 			position: relative;
 
 			}
 
 
 		.in_menu{
-			display: none;
+			display: inherit;
 			position: absolute;
 			left: 0;	
-			top:100%;
+			top:-10000px;
 			font-size: 0;
+			
 			
 			
 		}
@@ -151,23 +153,30 @@ table {
 		}
 
 		.in_in_menu{
-			display: none;		
+			display: inherit;
+			opacity: 0;
 			left: -90%;
 			top: 0;
 			font-size: 0;			
 			position: absolute;
 			padding-right: 50px;
+			
 						
+		}
+		.in_in_menu li{
+			background:orange;
 		}
 		
 
 		.menu li:hover .in_menu{
-			display: inherit;
+			transition: all .5s ease;
+			top:100%;
 	
 		}	
 
 		.in_menu li:hover .in_in_menu{
-			display: inherit;
+			transition: opacity 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+			opacity: 1;
 	
 		}
 
@@ -302,6 +311,77 @@ table {
 			top: 0;
 			}
 
+/*right_social_menu_buttons*/
+	.right_menu{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 400px;
+    padding: 0;
+    position: fixed;
+    right: -340px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    transition: transform 1s ease;
+    
+}
+
+.right_menu:hover{
+	transform: translateX(-350px) translateY(-50%);
+	}
+
+	.right_menu>p {
+		width: 70px;
+		height: 100%;
+		text-align: center;
+		font-size: 50px;
+		background: orange;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+		transition: background 1s ease;
+		border-radius: 10px;
+	}
+	.right_menu:hover>p {
+		background: transparent;
+	}
+
+	.right_menu>div {
+		width: 330px;
+	}
+	.right_menu ul {
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		width: 156px;
+		transform: rotate(45deg);
+	}
+	.right_menu li {
+		margin: 5px;
+		border: 2px solid orange;
+		overflow: hidden;
+	}
+	.right_menu a {
+		display: block;
+		width: 64px;
+		height: 64px;
+		background: url('../img/sprite.png');
+		transform: rotate(-45deg) scale(1.5);
+	}
+	.right_menu li:first-child>a {
+		background-position: -94px -10px;
+	}
+	.right_menu li:nth-child(2)>a {
+		background-position: -346px -10px;
+	}
+	.right_menu li:nth-child(3)>a {
+		background-position: -682px -10px;
+	}
+	.right_menu li:last-child>a {
+		background-position: -94px -10px;
+	}
+
 /*table_cell_properties*/
 		.t_cell{
 		outline: 2px solid black;	
@@ -395,8 +475,12 @@ table {
 			
 		}
 		
+		.clear{
+			clear: both;
+		}
+		
 		.clr:after{
-			content:"1";
+			content:"";
 			clear:both;
 			display:block;
 		}
@@ -452,4 +536,95 @@ table {
 	}
 
 
+/*LESSON 11*/
 
+textarea{
+	width: 300px;
+    height: 200px;
+    
+}
+
+textarea::-webkit-input-placeholder {
+    color: violet;
+}
+textarea::-moz-placeholder {
+    color: violet;
+}
+textarea:-ms-input-placeholder{
+    color: violet;
+}
+
+.select1{
+	margin: 50px auto;
+	display: inline-block;
+	position: relative;
+}
+
+.select1:before{
+	 content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 1px;
+      right: 5px;
+      transform: rotate(45deg);
+      border-bottom: 6px solid red;
+      border-right: 6px solid red;
+      pointer-events: none;
+}
+
+select{
+	width: 150px;
+	height: 40px;
+	color:red;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+label{
+      cursor: pointer;
+    }
+
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"]+label{
+	position: relative;
+}
+
+input[type="checkbox"]+label:before{
+	content: "";
+	position: absolute;
+	width: 150px;
+	height: 50px;
+	border:5px solid orange;
+	border-radius: 20px;
+}
+
+input[type="checkbox"]+label:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+	border:5px solid orange;
+	border-radius: 20px;
+	background: orange;
+	transition: all 2s ease;
+}
+
+input[type="checkbox"]:checked+label:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	width: 30px;
+	height: 30px;
+	border:5px solid orange;
+	border-radius: 20px;
+	background: orange;
+	transition: all 2s ease;
+
+}
