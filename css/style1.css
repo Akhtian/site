@@ -5,36 +5,8 @@
 }
 @font-face{
 	font-family:"Raimond";
-	url('../fonts/raimond_FREE.ttf');}
-
-@keyframes something {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(35deg);
-      }}
-
-@keyframes something2 {
-      0% {
-        transform: skew(45deg);
-      }
-      100% {
-        transform: rotate(5deg);
-      }}
-
-@keyframes something3 {
-      0% {
-        left:300px;
-        transform: rotate(45deg);
-      }
-      100% {
-        left:120px;
-        transform: rotate(85deg)
-      }}
-
-
-
+	url('../fonts/raimond_FREE.ttf');
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -132,6 +104,9 @@ table {
 			padding: 15px; 	
 		}
 /*Menu TOP*/
+		
+		
+
 		.menu{
 			text-align: center;
 			font-size: 0;
@@ -162,6 +137,8 @@ table {
 		.in_in_menu>li{
 			font-family: Raimond,serif;
 		}
+
+
 
 		.menu li:first-child{
 			margin-left: 0;
@@ -717,8 +694,18 @@ input[type="checkbox"]:checked+label:after{
  	position: relative;
  	background:radial-gradient(circle at 30% 50%, transparent 50px, black 50px);
  	border-radius: 60px 60px 60px 60px;
- 	animation: something 2s linear infinite alternate;
+ 	transform: rotate(0deg);
+ 	animation: something 5s linear infinite alternate;
+
 }
+
+ @keyframes something {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(45deg);
+      }
 
 .kluch_part1:before{
 	content:"";
@@ -859,7 +846,6 @@ input[type="checkbox"]:checked+label:after{
 	background: white;
 	border-radius: 100%;
 	z-index: 10;
-
 }
 
 .veslo1:before{
@@ -872,7 +858,6 @@ input[type="checkbox"]:checked+label:after{
 	background: green;
 	transform: skew(45deg);
 	z-index: 5;	
-	animation: something2 5s linear infinite alternate;
 }
 
 .veslo1:after{
@@ -886,7 +871,6 @@ input[type="checkbox"]:checked+label:after{
 	transform: rotate(45deg);
 	z-index: 5;	
 	border-radius: 50% 0 0 50%;
-	animation: something3 5s linear infinite alternate;
 }
 
 
@@ -900,7 +884,6 @@ input[type="checkbox"]:checked+label:after{
 	background: white;
 	border-radius: 100%;
 	z-index: 10;
-
 }
 
 .veslo2:before{
@@ -913,7 +896,6 @@ input[type="checkbox"]:checked+label:after{
 	background: green;
 	transform: skew(45deg);
 	z-index: 5;	
-	animation: something2 5s linear infinite alternate;
 }
 
 .veslo2:after{
@@ -927,7 +909,6 @@ input[type="checkbox"]:checked+label:after{
 	transform: rotate(45deg);
 	z-index: 5;	
 	border-radius: 50% 0 0 50%;
-	animation: something3 5s linear infinite alternate;
 }
 
 .veslo3{
@@ -951,7 +932,6 @@ input[type="checkbox"]:checked+label:after{
 	background: green;
 	transform: skew(45deg);
 	z-index: 5;	
-	animation: something2 5s linear infinite alternate;
 }
 
 .veslo3:after{
@@ -965,5 +945,4 @@ input[type="checkbox"]:checked+label:after{
 	transform: rotate(45deg);
 	z-index: 5;	
 	border-radius: 50% 0 0 50%;
-	animation: something3 5s linear infinite alternate;
 }
